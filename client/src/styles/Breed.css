@@ -1,0 +1,66 @@
+.breed {
+  padding: 20px;
+}
+
+.breedMainContainer {
+  display: flex;
+  width: 100%;
+  background-color: var(--background-color-dark);
+  flex-direction: row;
+  color: var(--text-color-light);
+  margin-bottom: 40px;
+}
+
+.breedImage {
+  border-radius: 8px;
+  max-width: 400px;
+  margin-bottom: 20px;
+  align-self: center;
+  margin-right: 40px;
+}
+
+.breedTitle {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.breedDesc {
+  letter-spacing: 1.5px;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 40px;
+}
+
+.breedSpecsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  align-self: center;
+  background-color: var(--background-color-dark-2);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.breedSpecsCol1,
+.breedSpecsCol2 {
+  display: grid;
+  gap: 20px;
+}
+
+.breedSpecsCol1Row {
+  color: var(--text-color-secondary);
+}
+
+.breedSpecsCol2Row {
+  color: var(--text-color-light);
+}
+
+@media screen and (max-width: 1000px) {
+  .breedMainContainer {
+    flex-direction: column;
+  }
+
+  .breedImage {
+    margin-right: 0px;
+  }
+}

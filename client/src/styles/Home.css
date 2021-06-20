@@ -1,0 +1,78 @@
+.home {
+  display: flex;
+  flex-direction: column;
+}
+
+.homeHero {
+  color: var(--text-color-light);
+  background-color: var(--background-color-dark);
+  padding: 20px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.homeHeroTitle {
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.homeHeroImgContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.homeHeroImgPanel {
+  height: 200px;
+  margin: 10px 10px;
+  background-color: var(--background-color);
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.homeHeroImgPanel:hover > .homeHeroImgCaption {
+  bottom: 204px;
+  height: 202px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.homeHeroImg {
+  height: 200px;
+  border-radius: 8px;
+}
+
+.homeHeroImgCaption {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  bottom: 40px;
+  height: 37px;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  transition: all 0.5s;
+}
+
+.homeHeroButton {
+  background-color: transparent;
+  border: 1px solid var(--background-color);
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  transition: all 0.5s;
+  text-decoration: none;
+}
+
+.homeHeroButton:hover {
+  color: var(--text-color);
+  background-color: var(--background-color);
+  font-weight: 500;
+}
